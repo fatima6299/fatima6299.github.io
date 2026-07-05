@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatimata Tidiane Dia, Ingénieure Télécoms & Réseaux</title>
+  <meta name="description" content="Portfolio de Fatimata Tidiane Dia — Ingénieure Télécommunications & Réseaux, spécialiste 4G/5G et VoNR.">
+  <link rel="icon" type="image/png" href="assets/img/im4.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CANVAS RÉSEAU ANIMÉ -->
+  <canvas id="networkCanvas"></canvas>
+  <!-- CURSEUR CUSTOM -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#home" class="logo">
+          <span class="logo-initials">FTD</span>
+          <span class="logo-line"></span>
+          <span class="logo-sub">Ingénieure Télécoms</span>
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="#about"      class="nav-link">À propos</a>
+          <a href="#education"  class="nav-link">Formation</a>
+          <a href="#experience" class="nav-link">Expérience</a>
+          <a href="#projects"   class="nav-link">Projets</a>
+          <a href="#contact"    class="nav-link">Contact</a>
+          <a href="assets/docs/CV-Fatimata.pdf" class="btn-cv" download>
+            Télécharger CV <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <p class="hero-eyebrow reveal">Salut, moi c'est —</p>
+          <h1 class="hero-name reveal">
+            Fatimata <br>
+            <em>Tidiane Dia</em>
+          </h1>
+          <div class="hero-divider reveal"></div>
+          <p class="hero-desc reveal">
+            Ingénieure télécoms et réseaux, je m'intéresse également au DevOps. »
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-dark">Découvrir mes projets</a>
+            <a href="#contact"  class="btn btn-outline">Travaillons ensemble</a>
+          </div>
+          
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="hero-photo-wrap">
+            <img src="assets/img/im1.jpg" alt="Fatimata Tidiane Dia" class="hero-photo">
+            <div class="hero-photo-badge">Disponible</div>
+          </div>
+          <div class="hero-stat-block">
+            <div class="hero-stat">
+              <span class="stat-num">2+ ans </span>
+              <span class="stat-label">Experience</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Projets réseau</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-num">Diplômée</span>
+              <span class="stat-label"> Ingenieure à l'ESP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-intro">
+          <span class="eyebrow">À propos</span>
+       
+          <h2 class="section-heading">Je suis Fatimata <br><em>ingénieure en telecommunication et réseaux.</em></h2>
+          <p class="about-intro-text">Je suis Fatimata, ingénieure télécoms et réseaux.
+Diplômée de l'École Supérieure Polytechnique de Dakar, j'allie gestion de projets techniques, environnements Microsoft (Windows Server, Active Directory) et expertise réseau de terrain.</p>
+          <p class="about-intro-text">J'ai déployé un cœur 5G complet avec Open5GS, intégré Kamailio comme serveur IMS pour la voix sur 5G SA, et géré un cluster Kubernetes en production. Cette même exigence m'a naturellement rapprochée du DevOps : automatiser, fiabiliser, faire tenir l'infrastructure, vraiment.</p>
+        </div>
+
+        <!-- Tech stack  -->
+        
+
+        <div class="tech-stack-full reveal">
+          <span class="eyebrow">Competences</span>
+          <h2 class="section-heading">Stack technique</h2>
+          <div class="tech-group">
+              <span class="tech-group-label">DevOps & Cloud</span>
+              <div class="tech-badges">
+                <span class="tech-badge"><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span>
+                <span class="tech-badge"><i class="devicon-docker-plain colored"></i> Docker</span>
+                <span class="tech-badge"><i class="devicon-gitlab-plain colored"></i> GitLab CI/CD</span>
+                <span class="tech-badge"><i class="devicon-prometheus-plain colored"></i> Prometheus</span>
+                <span class="tech-badge"><i class="devicon-grafana-plain colored"></i> Grafana</span>
+                <span class="tech-badge"><i class="fas fa-bell"></i> Alertmanager</span>
+                <span class="tech-badge"><i class="devicon-nginx-plain colored"></i> Nginx</span>
+                <span class="tech-badge"><i class="devicon-jira-plain colored"></i> Jira</span>
+                <span class="tech-badge"><i class="devicon-amazonwebservices-plain colored"></i> AWS</span>
+              </div>
+            </div>
+          <div class="tech-stack">
+            <div class="tech-group">
+              <span class="tech-group-label">Réseaux Mobiles</span>
+              <div class="tech-badges">
+                <span class="tech-badge"><i class="fas fa-server"></i> Open5GS</span>
+                <span class="tech-badge"><i class="fas fa-exchange-alt"></i> Kamailio</span>
+                <span class="tech-badge"><i class="fas fa-satellite"></i> UERANSIM</span>
+                <span class="tech-badge"><i class="fas fa-comment-dots"></i> Kannel</span>
+                <span class="tech-badge"><i class="fas fa-phone-alt"></i> Asterisk</span>
+              </div>
+            </div>
+
+            
+
+            <div class="tech-group">
+              <span class="tech-group-label">Outils & Développement</span>
+              <div class="tech-badges">
+                <span class="tech-badge"><i class="devicon-linux-plain colored"></i> Linux</span>
+                <span class="tech-badge"><i class="devicon-windows8-plain colored"></i> Windows Server</span>
+                <span class="tech-badge"><i class="fas fa-sitemap"></i> Active Directory</span>
+                <span class="tech-badge"><i class="fas fa-network-wired"></i> TCP/IP  OSPF  VLAN</span>
+                <span class="tech-badge"><i class="fas fa-server"></i> Cisco</span>
+                <span class="tech-badge"><i class="devicon-python-plain colored"></i> Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-tinted" id="education">
+      <div class="container">
+        <span class="eyebrow">Parcours académique</span>
+        <h2 class="section-heading">Formation</h2>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-year">2022–2025</div>
+            <div class="tl-body">
+              <h3>Diplôme d'Ingénieure — Télécommunications et Réseaux</h3>
+              <p class="tl-place">École Supérieure Polytechnique  Dakar, Sénégal</p>
+              <p>PFE : <em>Migration VoLTE → VoNR et intégration IMS dans un réseau cœur 5G SA.</em></p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-year">2020–2022</div>
+            <div class="tl-body">
+              <h3>DUT — Réseaux et Télécommunications</h3>
+              <p class="tl-place">École Supérieure Polytechnique  Dakar, Sénégal</p>
+              <p>PFE : <em>Renforcement de la sécurité réseau (ACL, VPN, NAC, segmentation).</em></p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-year">2019–2020</div>
+            <div class="tl-body">
+              <h3>Baccalauréat Scientifique S2 - Mention Bien</h3>
+              <p class="tl-place">Lycée Sinthiou Bamambe  Matam, Sénégal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        
+        <h2 class="section-heading">Expérience professionnelle</h2>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-year">Février 2025<br>Juillet 2026</div>
+            <div class="tl-body">
+              <h3>Ingénieur réseaux et systèmes— <mark>GATS</mark></h3>
+              <p class="tl-place">Global Africa Technology System  Dakar, Sénégal</p>
+              <div class="tl-tags">
+                <span>Prometheus</span><span>Grafana</span><span>Alertmanager</span>
+                <span>Kubernetes</span><span>GitLab CI/CD</span><span>Kannel SMS</span>
+              </div>
+              <ul>
+                <li>Déploiement d'une stack monitoring complète Prometheus, Grafana, Alertmanager pour la supervision temps réel des KPIs réseau et des alarmes</li>
+                <li>Déploiement et supervision d'un cœur 5G Standalone (Open5GS) avec intégration IMS (Kamailio, OpenIMSCore)</li>
+                <li>Administration Windows Server 2016, Linux et Active Directory ; déploiement et sécurisation de connexions VPN</li>
+                <li>Mise en place de pipelines CI/CD GitLab et clusters Kubernetes pour les déploiements automatisés</li>
+                <li>Serveur SMS (Kannel) + interface CLI d'envoi de masse</li>
+                <li>Production de documentation technique et rapports d'activité (incidents, configurations réseau)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-year">Août–Novembre<br>2022</div>
+            <div class="tl-body">
+              <h3>Stagiaire Support Réseau — <mark>Sonatel</mark></h3>
+              <p class="tl-place">Sacré-Cœur  Dakar, Sénégal</p>
+              <ul>
+                <li>Diagnostic et résolution de problèmes de connectivité client</li>
+                <li>Suivi des interventions via bases de données Excel</li>
+                <li>Archivage et gestion de dossiers techniques</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-tinted" id="projects">
+      <div class="container">
+        <span class="eyebrow">Ce que j'ai construit</span>
+        <h2 class="section-heading">Mes projets</h2>
+        <div class="projects-grid">
+
+          <article class="project-card project-featured reveal">
+            <div class="project-img">
+              <img src="assets/img/vonrwebp.webp" alt="VoLTE vers VoNR">
+              <div class="project-overlay">
+                <span>Projet phare</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-num">01</span>
+              <h3>Transition VoLTE → VoNR</h3>
+              <p>Migration complète de la voix sur LTE vers la voix sur NR, avec intégration du sous-système IMS dans un réseau 5G SA.</p>
+              <div class="project-tags">
+                <span>5G SA</span><span>VoNR</span><span>Open5GS</span><span>Kamailio</span><span>IMS</span>
+              </div>
+              <ul>
+                <li>Déploiement d'un cœur 5G autonome (Open5GS)</li>
+                <li>Intégration Kamailio comme serveur IMS</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img project-img-logo">
+              <img src="assets/img/kannel.png" alt="Serveur SMS Kannel">
+            </div>
+            <div class="project-info">
+              <span class="project-num">02</span>
+              <h3>Serveur SMS — Kannel</h3>
+              <p>Plateforme d'envoi de SMS en masse sous Linux avec interface CLI.</p>
+              <div class="project-tags">
+                <span>Kannel</span><span>Linux</span><span>Bash</span><span>SMS Gateway</span>
+              </div>
+              <ul>
+                <li>Installation & configuration Kannel</li>
+                <li>Envoi et réception des SMS</li>
+                <li>Mise en place d'une API SMS</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img">
+              <img src="assets/img/sec.avif" alt="Sécurité Réseau">
+            </div>
+            <div class="project-info">
+              <span class="project-num">03</span>
+              <h3>Renforcement Sécurité Réseau</h3>
+              <p>Sécurisation avancée d'un réseau d'entreprise par segmentation et contrôle d'accès.</p>
+              <div class="project-tags">
+                <span>ACL</span><span>VPN</span><span>NAC</span><span>Segmentation</span>
+              </div>
+              <ul>
+                <li>Mise en place d'ACL</li>
+                <li>Configuration tunnels VPN</li>
+                <li>Segmentation VLAN</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card project-devops reveal">
+            <div class="project-img project-img-logo">
+              <img src="assets/img/grafana.png" alt="Stack Monitoring">
+            </div>
+            <div class="project-info">
+              <span class="project-num">04</span>
+              <h3>Stack Monitoring</h3>
+              <p>Déploiement d'une stack d'observabilité complète sur infrastructure VPS pour la supervision temps réel des KPIs et alarmes réseau.</p>
+              <div class="project-tags">
+                <span>Prometheus</span><span>Grafana</span><span>Alertmanager</span><span>Linux</span>
+              </div>
+              <ul>
+                <li>Déploiement Prometheus + Alertmanager pour la collecte de métriques</li>
+                <li>Dashboards Grafana - KPIs réseau, alertes en temps réel</li>
+                <li>Configuration des règles d'alerte et notifications</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img project-img-logo">
+              <img src="assets/img/asterisk.png" alt="Serveur VoIP Asterisk">
+            </div>
+            <div class="project-info">
+              <span class="project-num">05</span>
+              <h3>Serveur VoIP — Asterisk</h3>
+              <p>Déploiement d'un serveur VoIP Asterisk en environnement local et sur cloud AWS.</p>
+              <div class="project-tags">
+                <span>Asterisk</span><span>VoIP</span><span>AWS</span><span>Linux</span>
+              </div>
+              <ul>
+                <li>Installation et configuration d'Asterisk (SIP, extensions)</li>
+                <li>Déploiement local + migration sur instance AWS EC2</li>
+                <li>Tests d'appels et validation end-to-end</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-img project-img-logo">
+              <img src="assets/img/k8s.png" alt="Kubernetes Orchestration">
+            </div>
+            <div class="project-info">
+              <span class="project-num">06</span>
+              <h3>Kubernetes — Orchestration de conteneurs</h3>
+              <p>Déploiement et gestion d'une cluster Kubernetes pour l'orchestration de conteneurs Docker.</p>
+              <div class="project-tags">
+                <span>Kubernetes</span><span>Docker</span><span>Cloud</span><span>DevOps</span>
+              </div>
+              <ul>
+                <li>Mise en place d'un cluster Kubernetes</li>
+                <li>Déploiement et gestion de pods et services</li>
+                <li>Pipeline Gitlab CI/CD </li>
+                <li>Configuration des stratégies de déploiement et de mise à jour</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-heading">On en parle ?<br><em>Écrivez-moi.</em></h2>
+        <div class="contact-grid">
+          <div class="contact-left reveal">
+            <p class="contact-intro">Un projet réseau, une opportunité, une idée folle en 5G — ou juste envie d'échanger avec une ingénieure qui a les mains dans le terminal. Je réponds toujours.</p>
+            <ul class="contact-list">
+              <li><i class="fas fa-envelope"></i><a href="mailto:fatimatidianedia@gmail.com">fatimatidianedia@gmail.com</a></li>
+              <li><i class="fas fa-phone"></i><a href="tel:+221781109439">+221 78 110 94 39</a></li>
+              <li><i class="fas fa-map-marker-alt"></i><span>Dakar, Sénégal</span></li>
+              <li><i class="fas fa-graduation-cap"></i><span>École Supérieure Polytechnique de Dakar</span></li>
+              <li><i class="fas fa-briefcase"></i><span>Ouverte aux opportunités</span></li>
+            </ul>
+
+           
+
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/fatimata-tidiane-dia-9166aa270/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/fatima6299" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="assets/docs/CV-Fatimata.pdf" download aria-label="CV PDF"><i class="fas fa-file-pdf"></i></a>
+            </div>
+          </div>
+          <div class="contact-right reveal">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xnqepqpg" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" name="subject" placeholder="Objet du message" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-full">
+                Envoyer <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">FTD.</span>
+        <p>Ingénieure Télécoms & Réseaux · Dakar, Sénégal</p>
+      </div>
+      
+      <p class="footer-copy">&copy; <span id="currentYear"></span> Fatimata Tidiane Dia. Développé avec <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backTop" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
